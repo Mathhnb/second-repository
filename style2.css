@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -41,13 +45,14 @@ header {
     color: #000000; /* Cor do texto dos links */
     text-decoration: none; 
     padding: 10px 15px; 
-    transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Adicionando transição */
     border-radius: 35px; /* Bordas arredondadas */
 }
 
 .navbar a:hover {
     background-color: #ffffff20; /* Fundo semi-transparente ao passar o mouse */
     color: #ffffff; /* Texto branco ao passar o mouse */
+    transform: scale(1.05); /* Efeito de escala */
 }
 
 h1 {
@@ -58,11 +63,25 @@ h1 {
     text-shadow: 0 4px 20px rgba(148, 119, 252, 0.5);
 }
 
+h2 {
+    color: #19f398; /* Mesma cor */
+    text-align: center; /* Centraliza o texto */
+    margin: 40px 0; /* Margem superior e inferior */
+    font-size: 3rem; /* Tamanho da fonte igual ao do h1 */
+    text-shadow: 0 4px 20px rgba(34, 230, 99, 0.596); /* Sombra de texto igual ao do h1 */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 h3 {
     text-align: center; 
     margin: 20px 0; 
     font-size: 2rem; 
     color: #9477FC; /* Nova cor */
+    transition: color 0.3s; /* Transição para efeito de hover */
+}
+
+h3:hover {
+    color: #19f398; /* Destaque ao passar o mouse */
 }
 
 p {
@@ -123,8 +142,6 @@ a:hover {
     color: #fff; 
 }
 
-
-
 footer {
     width: 100%; 
     background-color: #1f1f1f; 
@@ -149,8 +166,6 @@ footer {
     align-items: center; 
     margin: 10px; /* Adicionando margem para espaçamento entre os ícones */
 }
-
-
 
 .artist-icon {
     width: 50px; 
@@ -182,13 +197,3 @@ footer {
 .scroll-to-top:hover {
     background-color: #7a5bc0;
 }
-h2 {
-    color: #19f398; /* Mesma cor */
-    text-align: center; /* Centraliza o texto */
-    margin: 40px 0; /* Margem superior e inferior */
-    font-size: 3rem; /* Tamanho da fonte igual ao do h1 */
-    text-shadow: 0 4px 20px rgba(34, 230, 99, 0.596); /* Sombra de texto igual ao do h1 */
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-}
-
-
